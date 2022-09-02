@@ -1,5 +1,5 @@
 h1{
-    background-color: rgb(255, 163, 42);
+    background-color: lightblue;
     text-align: center;
 }
 table{
@@ -13,4 +13,8 @@ th,td{
 }
 footer{
     text-align: right;
+}
+table tr:hover {
+    background-color: lightblue;
+    cursor: pointer;
 }
