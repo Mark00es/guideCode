@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atributos</title>
+    <title>Selectores</title>
     <link rel="stylesheet" href="/assets/estiloTablaCentreada.css"/>       
     <link rel="stylesheet" href="/assets/estiloFondo.css">
     <link rel="stylesheet" href="/assets/style.css">
-    <link rel="icon" href="/assets/imagenes/html-removebg-preview.png">
+    <link rel="icon" href="/assets/imagenes/css.png">    
+        
 </head>
 <body>
     <nav id="menu">
@@ -36,40 +37,44 @@
             </li>
             <li><a href=" "><img src="/assets/imagenes/javascript.png" width="20" height="20"> JAVASCRIPT</a></li>            
         </ul>
-    </nav>    
-    <h1>Atributos</h1>  
-    <a href="index.html" class="casa"><img src="assets/imagenes/Mi proyecto.png" width="60px" height="60px"></a>            
-
+    </nav>                
+    <h1>Selectores Css</h1>
+    <a href="index.html" class="casa"><img src="assets/imagenes/Mi proyecto.png" width="60px" height="60px"></a>
     <table>        
         <thead>
             <tr>
-                <th>Tipo de Atibuto</th>
-                <th>Descripcion</th>           
-                <th>Ejemplo</th>                
+                <th>Nombre</th>
+                <th>Descripción</th>                
+                <th>Formato</th>
             </tr>   
         </thead>
         <tbody>
+            <tr>                                
+                <td>Universal</td>
+                <td>Selecciona todos los elementos. </td>      
+                <td>*{}</td>                                
+            </tr>        
+            <tr>                                
+                <td>Tipo</td>
+                <td>Permite seleccionar elementos usando el nombre del elemento.</td>
+                <td>div{}</td>                
+            </tr>
+            <tr>                            
+                <td>Clase</td>
+                <td>Permite seleccionar elementos en función de los valores del atributo class</td>
+                <td>.NombreClase{}</td>                
+            </tr>
             <tr>                                    
-                <td>Normales</td>
-                <td>Contienen información extra acerca del elemento</td>
-                <td>id="importante"</td>
-            </tr>            
-            <tr>                                
-                <td>Vacios</td>
-                <td>No contiene informacion mas comunes en input</td>
-                <td>&lt;input disabled&gt;</td>
-            </tr>                     
-            <tr>                                
-                <td>Globales</td>
-                <td>Atributos comunes a todos los elementos HTML</td>
-                <td>class="titulo"</td>
-            </tr>                     
-            <tr>                                
-                <td>Personalizados</td>
-                <td>Pueden ser usados en todos los elementos.</td>
-                <td><span>data</span>-edad="30"</td>
-            </tr>                     
+                <td>Id</td>
+                <td>Permite seleccionar elementos en función de los valores del atributo id <span>unicos</span></td>
+                <td>#NombreId{}</td>                
+            </tr>
+            <tr>                                    
+                <td>Atributo</td>
+                <td>Permite seleccionar elementos en función de la presencia o del valor de un determinado atributo.</td>
+                <td>a[title]{}</td>                
+            </tr>                               
         </tbody> 
-    </table>  
+    </table>     
 </body>
 </html>

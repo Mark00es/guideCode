@@ -1,0 +1,66 @@
+*{
+    color: white;
+}
+h1{           
+    font-size: 60px;        
+    border-radius: 90PX; 
+    border: 4px solid black;
+    background-color: rgb(82, 80, 78);    
+}
+.casa{ 
+    position:absolute;
+    top: 45px; left: 78rem; 
+    flex-wrap: wrap;
+}						
+        
+#menu {    
+    margin:auto;        
+    font-family:Arial, Helvetica, sans-serif;    
+}
+
+ul{
+    position:relative;
+    float:left;
+    font-size: 20px;    
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {    
+    background-color:rgb(82, 80, 78);
+    color:#fff;
+    text-decoration:none;
+    padding:5px 20px;
+    display:block;
+}
+
+.nav li a:hover {
+    color:#f5c843;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:10px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}	
+body{    
+    background-image: url("https://img.freepik.com/vector-premium/fondo-oro-lujo_23-2148625379.jpg?w=740");    
+    background-size: cover;    
+    background-attachment: fixed;
+}
+footer{
+    text-align: center;
+}
+h1:hover,h3:hover,strong:hover,footer:hover,address:hover{
+    color:#f5c843;
+}
+span{
+    color:#E74C3C;
+}

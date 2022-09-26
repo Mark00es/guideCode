@@ -1,0 +1,24 @@
+h2{
+    text-align: center;        
+    font: oblique bold 200% cursive;
+}
+em{
+    color: red;
+    
+}
+strong{
+    font-size: 1.5rem;
+    font-family: "Segoe UI";
+}
+#caracteristicas, #historia{
+    color: #f5c843;
+    font-family: "Latin Modern Roman";
+    font-style: italic;
+}
+#texto{
+    text-align: justify;
+    height: 700px;
+    width: 900px;
+    margin: 2rem auto;
+    font-size: 20px;    
+}

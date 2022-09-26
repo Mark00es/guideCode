@@ -1,0 +1,14 @@
+#texto{
+    text-align: justify;
+    height: 100px;
+    width: 500px;
+    margin: 2rem auto;
+    font-size: 20px;    
+}
+#estrucCss{
+    justify-content: center;            
+    display: flex;    
+    height: 300px;
+    width: 500px;
+    margin: 2rem auto;    
+}

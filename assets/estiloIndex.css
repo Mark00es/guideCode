@@ -1,0 +1,16 @@
+.imagenes>div{    
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 30px;    
+    /* border: 1px solid white;         */
+    font-size: 2rem;        
+    font-family: 'Courier New', Courier, monospace;
+}
+.imagenes>div:hover{        
+    font-size: 3rem;           
+    background-color: rgb(82, 80, 78);
+    text-decoration: none;
+}
+h3{
+    text-align: center;
+}
