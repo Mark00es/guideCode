@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <link rel="stylesheet" href="/assets/styleMenu.css">
+    <link rel="stylesheet" href="/assets/estiloTabla.css">    
+    <link rel="stylesheet" href="/assets/estiloFondo.css">
+
+</head>
+<body>
+    <div id="sidemenu" class="menu-collapsed">        
+        <!-- header -->
+        <div id="header">
+            <div id="tittle"><span>Menu</span></div>
+            <div id="menu-btn">
+                <div class="btn-contenido"></div>
+                <div class="btn-contenido"></div>
+                <div class="btn-contenido"></div>
+            </div>
+        </div>
+        <!-- profile -->
+        <div id="profile">
+            <a href="/index.html">
+                <div id="photo"><img src="/assets/imagenes/manual-removebg-preview.png" alt=""> </div>
+                <div id="name"><span>Mi Manual</span></div>            
+            </a>
+        </div>
+        <!-- Items -->
+        <div id="menu-items">
+            <div class="item">
+                <a href="/contenidoHtml.html">
+                    <div class="icon"><img src="/assets/imagenes/html-removebg-preview.png" alt=""></div>
+                    <div class="title"><span>HTML</span></div>
+                </a>
+            </div>
+            <div class="separator"></div>
+            <div class="item">
+                <a href="/contenidoCss.html">
+                    <div class="icon"><img src="/assets/imagenes/css.png" alt=""></div>
+                    <div class="title"><span>CSS</span></div>
+                </a>
+            </div>
+            <div class="separator"></div>
+            <div class="item">
+                <a href="/practica.html">
+                    <div class="icon"><img src="/assets/imagenes/practica.png" alt=""></div>
+                    <div class="title"><span>PRACTICA CSS</span></div>
+                </a>
+            </div>
+            <div class="separator"></div>
+            <div class="item">
+                <a href="/flexBox.html">
+                    <div class="icon"><img src="" alt=""></div>
+                    <div class="title"><span>FLEXBOX</span></div>
+                </a>
+            </div>
+            <div class="separator"></div>
+            <div class="item">
+                <a href="">
+                    <div class="icon"><img src="/assets/imagenes/javascript.png" alt=""></div>
+                    <div class="title"><span>JAVASCRIPT</span></div>
+                </a>
+            </div>
+        </div>    
+    </div>    
+    <script type="module" src="./src/presenter.js"></script>
+    <h2 id="principio">FLEXBOX</h2>
+    <div class="seccion1">        
+    <h2>FLEXBOX: EJE PRINCPAL</h2>
+    <p>
+        La propiedad flex-direction permite establecer la dirección del eje principal del contenedor flexible. Los elementos flexibles se colocan a en la dirección del eje principal.
+    </p>
+    <div class="seccion2">
+        <h2>FLEXBOX: EJE PRINCPAL DE IZQUIERDA A DERECHA</h2>        
+            <div class="imagenes">
+                <img src="/assets/imagenes/primero.png" alt="">
+            </div>                    
+        <h2>FLEXBOX: EJE PRINCPAL DE DERECHA A IZQUIERDA</h2>
+        <div class="imagenes">
+            <img src="/assets/imagenes/segundo.png" alt="">
+        </div>
+        <h2>FLEXBOX: EJE PRINCIPAL DE ARRIBA A ABAJO</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="/assets/imagenes/tercero.png" alt="#">
+        </div>
+        <h2>FLEXBOX: EJE PRINCIPAL DE ABAJO A ARRIBA</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="/assets/imagenes/cuarto.png" alt="#">
+        </div>
+    </div>    
+    <div class="seccion3">
+        <h2>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</h2>
+        <div class="imagenes">
+        <img src="/assets/imagenes/quinto.png" alt=""></div>
+        <h2>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</h2>
+        <div class="imagenes">
+            <img src="/assets/imagenes/sexto.png" alt="">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</h2>
+        <div class="imagenes">
+            <img src="/assets/imagenes/septimo.png" alt="">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE UNA SOLA LINEA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</h2>
+        <div class="imagenes">
+            <img src="/assets/imagenes/octavo.png" alt="">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</h2>
+        <div class="imagenes">
+            <img src="/assets/imagenes/noveno.png" alt="">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</h2>
+        <div class="imagenes">
+            <img src="/assets/imagenes/decimo.png" alt="">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</h2>
+        <div class="imagenes">
+            <img src="/assets/imagenes/onceavo.png" alt="">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE IZQUIERDA A DERECHA)</h2>
+        <div class="imagenes">
+            <img src="/assets/imagenes/doceabo.png" alt="">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS IZQUIERDA (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE DERECHA A IZQUIERDA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_derecha_a_izquierda_2.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_derecha_a_izquierda_html_css_2.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ARRIBA A ABAJO)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_arriba_a_abajo_2.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_arriba_a_abajo_html_css_2.png" alt="#">
+        </div>
+        <h2>CONTENEDOR FLEXIBLE DE VARIAS LINEAS (LOS ELEMENTOS FLEXIBLES SE COLOCAN DE ABAJO A ARRIBA)</h2>
+        <div class="imagenes">
+            <img class="cont-flex" src="imagenes/varias_lineas_abajo_a_arriba_2.png" alt="#">
+            <img class="cont-flex" src="imagenes/varias_lineas_abajo_a_arriba_html_css_2.png" alt="#">
+        </div>        
+    </div>    
+    <a href="#principio"><img src="/assets/imagenes/arriba.png" id="botonArriba"></a>
+    <script src="./src/botonArriba.js"></script>    
+</body>
+</html>

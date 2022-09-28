@@ -1,0 +1,40 @@
+.htmlRef{         
+    border: 2px solid black;    
+}
+.menu {    
+    margin:auto;        
+    font-family:Arial, Helvetica, sans-serif;    
+}
+
+ul{
+    position:relative;
+    float:left;
+    font-size: 20px;    
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {    
+    background-color:#264564;
+    color:#fff;
+    text-decoration:none;
+    padding:5px 20px;
+    display:block;
+}
+
+.nav li a:hover {
+    color:#f5c843;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:10px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}	

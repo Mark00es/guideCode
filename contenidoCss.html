@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="/assets/styleMenu.css">
+    <link rel="stylesheet" href="/assets/estiloTabla.css">
+    <link rel="stylesheet" href="/assets/estiloFondo.css">
+    <link rel="stylesheet" href="/assets/estiloColores.css">
+    <link rel="stylesheet" href="/assets/estiloParrafo.css">
+    <link rel="icon" href="/assets/imagenes/css.png">
+</head>
+<body>    
+    <div id="sidemenu" class="menu-collapsed">        
+        <!-- header -->
+        <div id="header">
+            <div id="tittle"><span>Menu</span></div>
+            <div id="menu-btn">
+                <div class="btn-contenido"></div>
+                <div class="btn-contenido"></div>
+                <div class="btn-contenido"></div>
+            </div>
+        </div>
+        <!-- profile -->
+        <div id="profile">
+            <a href="/index.html">
+                <div id="photo"><img src="/assets/imagenes/manual-removebg-preview.png" alt=""> </div>
+                <div id="name"><span>Mi Manual</span></div>            
+            </a>
+        </div>
+        <!-- Items -->
+        <div id="menu-items">
+            <div class="item">
+                <a href="/contenidoHtml.html">
+                    <div class="icon"><img src="/assets/imagenes/html-removebg-preview.png" alt=""></div>
+                    <div class="title"><span>HTML</span></div>
+                </a>
+            </div>
+            <div class="separator"></div>
+            <div class="item">
+                <a href="/contenidoCss.html">
+                    <div class="icon"><img src="/assets/imagenes/css.png" alt=""></div>
+                    <div class="title"><span>CSS</span></div>
+                </a>
+            </div>
+            <div class="separator"></div>
+            <div class="item">
+                <a href="/practica.html">
+                    <div class="icon"><img src="/assets/imagenes/practica.png" alt=""></div>
+                    <div class="title"><span>PRACTICA CSS</span></div>
+                </a>
+            </div>
+            <div class="separator"></div>
+            <div class="item">
+                <a href="/flexBox.html">
+                    <div class="icon"><img src="" alt=""></div>
+                    <div class="title"><span>FLEXBOX</span></div>
+                </a>
+            </div>
+            <div class="separator"></div>
+            <div class="item">
+                <a href="">
+                    <div class="icon"><img src="/assets/imagenes/javascript.png" alt=""></div>
+                    <div class="title"><span>JAVASCRIPT</span></div>
+                </a>
+            </div>
+        </div>    
+    </div>    
+    <script type="module" src="./src/presenter.js"></script>
+    <!-- tabla -->
+    <p id="texto">Hojas de Estilo en Cascada es el lenguaje de <span> estilos</span> utilizados para describir la presentación de documentos HTML. <br>
+        CSS es utilizado para diseñar y dar estilo a las páginas web, por ejemplo, alterando la fuente, color, tamaño y espaciado del contenido, dividirlo en múltiples columnas o agregar animaciones y otras características decorativas.</P>        
+    <img src="/assets/imagenes/estructuraCss.png" id="estruc">
+    <h1 id="subtipo">ELEMENTOS CSS</h1>         
+    <hr>
+    <table>        
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>                
+                <th>Formato</th>
+                <th>Ejemplo</th>
+            </tr>   
+        </thead>
+        <tbody>
+            <tr>                                
+                <td><a href="https://htmlcolorcodes.com/es/" target="_blank">Color</a></td>
+                <td>Se inserta el color en ingles</td>      
+                <td>color: red;</td>                
+                <td><div id="cRed">&nbsp;</div></td>
+            </tr>        
+            <tr>                                
+                <td ><a href="https://htmlcolorcodes.com/es/" target="_blank">rgb</a></td>
+                <td>Mezcla intensidades de los colores primarios</td>
+                <td> rgb(red, green, blue)</td>
+                <td><div id="rgbColor">&nbsp;</div></td>
+            </tr>
+            <tr>                            
+                <td><a href="https://www.w3schools.com/css/css_colors_rgb.asp" target="_blank">rgba</a></td>
+                <td>El valor a especifica la transparencia </td>
+                <td>rgba(red, green, blue, Opacity)</td>
+                <td><div id="rgbaColor">&nbsp;</div></td>
+            </tr>
+            <tr>                                    
+                <td><a href="https://hslpicker.com/" target="_blank">hsl</a></td>
+                <td>Define el color saturacion y la iluminacion</td>
+                <td>hsl(hue, saturation, lightness)</td>
+                <td><div id="hslColor">&nbsp;</div></td>
+            </tr>
+            <tr>                                    
+                <td><a href="https://hslpicker.com/" target="_blank">hsla</a></td>
+                <td>Es igual que la funcion hsl pero con la opacidad</td>
+                <td>hsla(hue, saturation, lightness, Opacity)</td>
+                <td><div id="hslaColor">&nbsp;</div></td>
+            </tr>                               
+        </tbody> 
+    </table>    
+    <h1 id="subtipo">Selectores Css</h1>    
+    <hr>
+    <table>        
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>                
+                <th>Formato</th>
+            </tr>   
+        </thead>
+        <tbody>
+            <tr>                                
+                <td><a href="https://www.w3.org/TR/selectors-3/#universal-selector" target= "_blank">Selector Universal</a></td>
+                <td>Selecciona todos los elementos. </td>      
+                <td>*</td>                                
+            </tr>        
+            <tr>                                
+                <td><a href="https://www.w3.org/TR/selectors-3/#type-selectors" target= "_blank">Selector de Tipo</a></td>
+                <td>Permite seleccionar elementos usando el nombre del elemento.</td>
+                <td>div</td>                
+            </tr>
+            <tr>                            
+                <td><a href="https://www.w3.org/TR/selectors-3/#class-html">Clase</a></td>
+                <td>Permite seleccionar elementos en función de los valores del atributo class</td>
+                <td>.NombreClase</td>                
+            </tr>
+            <tr>                                    
+                <td><a href="https://www.w3.org/TR/selectors-3/#id-selectors"> Id</a></td>
+                <td>Permite seleccionar elementos en función de los valores del atributo id <span>unicos</span></td>
+                <td>#NombreId</td>                
+            </tr>            
+            <tr>                
+                <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">tipo atributos</a></td>
+                <td>Un tipo con un atributo "attr".</td>
+                <td>Tipo[attr]</td>                
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">tipo atributos</a></td>                
+                <td>Un elemento selector cuyo valor de atributo "attr" es exactamente igual a value.</td>                
+                <td>selector[attr=value]</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">tipo atributos</a></td>                
+                <td>Un elemento selector cuyo valor de atributo "attr" es una lista de valores separados por espacios en blanco, uno de los cuales es exactamente igual a value.</td>                
+                <td>selector[attr~=value]</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">tipo atributos</a></td>                
+                <td>Un elemento selector cuyo valor de atributo "attr" comienza exactamente con la cadena value.</td>                
+                <td>selector[attr^=value]</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">tipo atributos</a></td>                
+                <td>Un elemento selector cuyo valor de atributo "attr" termina exactamente con la cadena value.</td>
+                <td>selector[attr$=value]</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">tipo atributos</a></td>                
+                <td>Un elemento selector cuyo valor de atributo "attr" contiene la subcadena value.</td>                
+                <td>selector[attr*=value]</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#attribute-selectors" target= "_blank">tipo atributos</a></td>                
+                <td>Un elemento selector cuyo atributo "attr" tiene una lista de valores separados por guiones que comienzan (desde la izquierda) con "en".</td>                
+                <td>selector[attr|="en"]</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, raíz del documento.</td>
+                <td>selector:root</td>        
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, el n-ésimo hijo de su padre.</td>            
+                <td>selector:nth-child(n)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, el n-ésimo hijo de su padre, contando desde el último.</td>                
+                <td>selector:nth-last-child(n)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, el n-ésimo hermano de su tipo.</td>                
+                <td>selector:nth-of-type(n)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, el n-ésimo hermano de su tipo, contando desde el último.</td>                
+                <td>selector:nth-last-of-type(n)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, primer hijo de su padre.</td>                
+                <td>selector:first-child</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, último hijo de su padre.</td>                
+                <td>selector:last-child</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>
+                <td>Un elemento selector, primer hermano de su tipo.</td>                
+                <td>selector:first-of-type</td>                
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, último hermano de su tipo.</td>                
+                <td>selector:last-of-type</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, único hijo de su padre.</td>                
+                <td>selector:only-child</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector, único hermano de su tipo.</td>                
+                <td>selector:only-of-type</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#structural-pseudos" target= "_blank">Pseudoclases</a></td>                
+                <td>Un elemento selector que no tiene hijos (incluidos los nodos de texto).</td>                
+                <td>selector:empty</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#link" target= "_blank">Pseudoclases de enlace</a></td>                
+                <td>Siendo un elemento selector el ancla fuente de un hipervínculo cuyo destino aún no ha sido visitado.</td>                
+                <td>selector:link</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#link" target= "_blank">Pseudoclases de enlace</a></td>                
+                <td>Siendo un elemento selector el ancla fuente de un hipervínculo cuyo destino aún no ha sido visitado.</td>                
+                <td>selector:visited</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#useraction-pseudos" target= "_blank">Pseudoclases Accion</a></td>                
+                <td>Un elemento selector durante ciertas acciones del usuario.</td>                
+                <td>selector:active</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#useraction-pseudos" target= "_blank">Pseudoclases Accion</a></td>                
+                <td>Un elemento selector durante ciertas acciones del usuario.</td>                
+                <td>selector:hover</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#useraction-pseudos" target= "_blank">Pseudoclases Accion</a></td>                
+                <td>Un elemento selector durante ciertas acciones del usuario.</td>                
+                <td>selector:focus</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#target-pseudo" target= "_blank">Pseudoclase objetivo</a></td>                
+                <td>Un elemento selector es el destino del URI de referencia.</td>                
+                <td>selector:target</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#lang-pseudo" target= "_blank">Lang()</a></td>                
+                <td>Un elemento de tipo selector en el idioma "fr".</td>                
+                <td>selector:lang(fr)</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#UIstates" target= "_blank">Enabled</a></td>                
+                <td>Un elemento de interfaz de usuario selector esta habilitado.</td>                
+                <td>selector:enabled</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#UIstates" target= "_blank">Disabled</a></td>                
+                <td>Un elemento de interfaz de usuario selector esta deshabilitado.</td>                
+                <td>selector:disabled</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#UIstates" target= "_blank">Checked</a></td>                
+                <td>Un elemento tipo la interfaz de usuario que está marcado.</td>                
+                <td>selector:checked</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#first-line" target= "_blank">Primera Linea</a></td>                
+                <td>La primera línea formateada de un elemento selector.</td>                
+                <td>selector::first-line</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#first-line" target= "_blank">Primera letra</a></td>                
+                <td>La primera letra formateada de un elemento selector.</td>                
+                <td>selector::first-letter</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#gen-content" target= "_blank">Antes</a></td>                
+                <td>Contenido generado antes de un elemento selector.</td>                
+                <td>selector::before</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.w3.org/TR/selectors-3/#gen-content" target= "_blank">Despues</a></td>                
+                <td>Contenido generado después de un elemento selector.</td>                
+                <td>selector::after</td>
+            </tr>                
+        </tbody> 
+    </table>    
+    <h1 id="subtipo">Unidades Css</h1>
+    <hr>
+    <table>                
+        <thead>
+            <tr>
+                <th>Unidad</th>
+                <th>Descripción</th>                
+                <th>Formato</th>
+            </tr>   
+        </thead>
+        <tbody>
+            <tr>                                
+                <td>Px</td>
+                <td>Pixel</td>      
+                <td>12px</td>                                
+            </tr>        
+            <tr>                                
+                <td>rem</td>
+                <td>Relativo al tamaño de la letra del elemento root.</td>
+                <td>1rem</td>                
+            </tr>
+            <tr>                            
+                <td>%</td>
+                <td>Relativo a otro valor.</td>
+                <td>5%</td>
+            </tr>
+            <tr>                                    
+                <td>vw</td>
+                <td>Relativo al ancho del viewport</td>
+                <td>4vw</td>                
+            </tr>
+            <tr>                                    
+                <td>vh</td>
+                <td>Relativo al alto del viewport.</td>
+                <td>4vh</td>                
+            </tr>                               
+        </tbody> 
+    </table>             
+        <h1 id="subtipo">Propiedades</h1> 
+        <hr>
+        <table>
+            <thead>
+                <th>Propiedad</th>
+                <th>Valor Inicial</th>
+                <th>Heredable</th>
+                <th>Valores</th>
+                <th>Descripcion</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>width</td>
+                    <td>auto</td>
+                    <td>No</td>
+                    <td>auto longitud %</td>
+                    <td>establece el ancho de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" target="_blank">width</a></td>
+                </tr>
+                <tr>
+                    <td>min-width</td>
+                    <td>auto</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta</td>
+                    <td>establece el ancho mínimo de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-width" target="_blank">min-width</a></td>
+                </tr>
+                <tr>
+                    <td>max-width</td>  
+                    <td>none</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta.</td>
+                    <td>establece el ancho máximo de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width" target="_blank">max-width</a></td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>auto</td>
+                    <td>No</td>
+                    <td>el porcentaje se calcula con respecto a la altura del bloque contenedor de la caja generada.</td>
+                    <td>especifica la altura de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" target="_blank">height</a></td>
+                </tr>
+                <tr>
+                    <td>min-height</td>
+                    <td>auto</td>
+                    <td>No</td>
+                    <td>el porcentaje se calcula con respecto a la altura del bloque contenedor de la caja generada.</td>
+                    <td>establece la altura mínima de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-height" target="_blank">min-height</a></td>
+                </tr>
+                <tr>
+                    <td>max-height</td>
+                    <td>none</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta</td>
+                    <td>establece la altura máxima de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-height" target="_blank">max-height</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align:center;">
+            <img src="/assets/imagenes/propiedades.jpeg" alt="">
+        </div>
+        <h3 id="subtipo">Relleno</h3>
+        <hr>
+        <table>
+            <thead>
+                <th>Propiedad</th>
+                <th>Valor Inicial</th>
+                <th>Heredable</th>
+                <th>Valores</th>
+                <th>Descripcion</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>padding-top</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta</td>
+                    <td>establece la altura del área de relleno en la parte superior de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top" target="_blank">padding-top</a></td>
+                </tr>
+                <tr>
+                    <td>padding-right</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta</td>
+                    <td>establece el ancho del área de relleno a la derecha de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right" target="_blank">padding-right</a></td>
+                </tr>
+                <tr>
+                    <td>padding-bottom</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta</td>
+                    <td>establece la altura del área de relleno en la parte inferior de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom" target="_blank">padding-bottom</a></td>
+                </tr>
+                <tr>
+                    <td>padding-left</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta</td>
+                    <td>establece el ancho del área de relleno a la izquierda de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left" target="_blank">padding-left</a></td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>0 para cada padding.</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta para todos los padding.</td>
+                    <td>establece el ancho del área de relleno a la izquierda de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank">padding</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3 id="subtipo">Borde</h3>
+        <hr>
+        <table>
+            <thead>
+                <th>Propiedad</th>
+                <th>Valor Inicial</th>
+                <th>Heredable</th>
+                <th>Valores</th>
+                <th>Descripcion</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>border-width</td>
+                    <td>medium para todos los border</td>
+                    <td>No</td>
+                    <td>la longitud absoluta o 0 para todos los border.</td>
+                    <td>establece el ancho del borde de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width" target="_blank">border-width</a></td>
+                </tr>
+                <tr>
+                    <td>border-style</td>
+                    <td>none</td>
+                    <td>No</td>
+                    <td>la longitud absoluta o 0 para todos los border.</td>
+                    <td>establece el estilo de línea para los cuatro lados del borde de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style" target="_blank">border-style</a></td>
+                </tr>
+                <tr>
+                    <td>border-color</td>
+                    <td>currentcolor</td>
+                    <td>No</td>
+                    <td>color calculado.</td>
+                    <td>establece el color del borde de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-color" target="_blank">border-color</a></td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>medium,none,currentcolor</td>
+                    <td>No</td>
+                    <td>la longitud absoluta, como se especificó, color calculado.</td>
+                    <td>la propiedad abreviada CSS establece el borde de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">border</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 id="subtipo">Margen</h1>
+        <hr>
+        <table>
+            <thead>
+                <th>Propiedad</th>
+                <th>Valor Inicial</th>
+                <th>Heredable</th>
+                <th>Valores</th>
+                <th>Descripcion</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>margin-top</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta.</td>
+                    <td>establece el área de margen en la parte superior de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top" target="_blank">margin-top</a></td>
+                </tr>
+                <tr>
+                    <td>margin-right</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica.</td>
+                    <td>establece el área de margen en el lado derecho de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right" target="_blank">margin-right</a></td>
+                </tr>
+                <tr>
+                    <td>margin-bottom</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta</td>
+                    <td>establece el área de margen en la parte inferior de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom" target="_blank">margin-bottom</a></td>
+                </tr>
+                <tr>
+                    <td>margin-left</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta.</td>
+                    <td>establece el área de margen en el lado izquierdo de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left" target="_blank">margin-left</a></td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>0 para todos los margin</td>
+                    <td>No</td>
+                    <td>el porcentaje como se especifica o la longitud absoluta para cada margin.</td>
+                    <td>establece el área de margen en los cuatro lados de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">margin</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="subtipo">Facilitar Calculos</h3>
+        <hr>
+        <table>
+            <thead>
+                <th>Propiedad</th>
+                <th>Valor Inicial</th>
+                <th>Heredable</th>
+                <th>Valores</th>
+                <th>Descripcion</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>box-sizing</td>
+                    <td>content-box</td>
+                    <td>No</td>
+                    <td>como se especificó.</td>
+                    <td>establece cómo se calcula el ancho y alto total de un elemento.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">box-sizing</a></td>
+                </tr>
+                <tr>
+                    <td>box-sizing</td>
+                    <td>border-box</td>
+                    <td>No</td>
+                    <td>como se especificó.</td>
+                    <td>el ancho y el alto incluyen el relleno y los bordes.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">box-sizing</a></td>
+                </tr>
+            </tbody>
+    </table>
+    <a href="#texto"><img src="/assets/imagenes/arriba.png" id="botonArriba"></a>
+    <script src="./src/botonArriba.js"></script>
+</body>
+</html>

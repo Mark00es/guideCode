@@ -1,0 +1,26 @@
+*{
+    color: white;
+}
+table{
+    margin: 0 auto;
+    width: 85%;
+    text-align: justify;
+    font-size: 25px;
+    border: 1px solid black;            
+}
+th{    
+    background-color: #03A64A;
+}
+th,td{            
+    border: 1px solid black;
+}
+table tr:hover{                            
+    background-color: #04BF8A;
+}
+#botonArriba{
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    width: 40px;
+    transition: all 1s;
+}
